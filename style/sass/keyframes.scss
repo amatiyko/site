@@ -1,0 +1,88 @@
+//Project paragraph moves down
+@-webkit-keyframes movedown {
+  0% {
+    transform: translateY(1px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+}
+@-moz-keyframes movedown {
+  0% {
+    transform: translateY(1px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+}
+@keyframes movedown {
+  0% {
+    transform: translateY(1px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+}
+
+//Form tootltip appearing
+@-webkit-keyframes tooltip {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tooltip {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+//Modal form
+@-webkit-keyframes modal {
+  0% {
+    z-index: -2;
+    opacity: 0;
+  }
+  10% {
+    z-index: 9999;
+    opacity: 1;
+  }
+  90% {
+    z-index: 9999;
+    opacity: 1;
+  }
+
+  100% {
+    z-index: -2;
+    opacity: 0;
+  }
+}
+@keyframes modal {
+  0% {
+    z-index: -2;
+    opacity: 0;
+  }
+  10% {
+    z-index: 9999;
+    opacity: 1;
+  }
+  90% {
+    z-index: 9999;
+    opacity: 1;
+  }
+
+  100% {
+    z-index: -2;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin login</title>
+    <link rel="stylesheet" href="../style/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../style/css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 admin_form">
+                <form action="admin.php" method="POST">
+                    <label>Login<small> (required)</small></label>
+                    <input name="login" type="text" placeholder="Login..." required="required" >
+                    <label>Password<small> (required)</small></label>
+                    <input name="password" type="password" placeholder="Password..." required="required" >
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

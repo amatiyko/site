@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Digital Agency | Messages</title>
+    <link rel="stylesheet" href="../style/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../style/css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> Welcome back, <?php echo $_SESSION['login']; ?>! <a href="<?php unset($_SESSION['login']); echo "index.html";?>">Log out!</a></h1>
+                <h2> Messages from potential clients </h2>
+
+                <div class="table-responsive">
+                    <table class="table  table-striped">
+                        <tr>
+                            <th class="order">N</th>
+                            <th class="date">Date</th>
+                            <th class="firstname">First Name</th>
+                            <th class="lastname">Last Name</th>
+                            <th class="email">Email</th>
+                            <th class="message">Message</th>
+                        </tr>
+
+                        <?php foreach ($messages as $item): ?>
+                        <tr>
+                            <td> <?php echo $item['id'] ?> </td>
+                            <td class="date" > <?php echo $item['date'] ?> </td>
+                            <td> <?php echo $item['firstName'] ?> </td>
+                            <td> <?php echo $item['lastName'] ?> </td>
+                            <td> <a href="mailto:<?php echo $item['email'] ?>"><?php echo $item['email'] ?></a></td>
+                            <td><?php echo $item['message'] ?></td>
+                        </tr>
+
+                        <?php endforeach; ?>
+
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
